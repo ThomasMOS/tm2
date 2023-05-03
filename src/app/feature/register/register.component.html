@@ -1,0 +1,191 @@
+<div class="container-fluid ps-md-0">
+  <div class="row g-0">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="register d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <!-- Sign In Form -->
+              <form [formGroup]="signupForm">
+                <div class="header">Create your account</div>
+                <br />
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingFirstNameInput"
+                        placeholder="First Name"
+                        formControlName="firstName"
+                        class="form-control"
+                        autocomplete="off"
+                        required
+                      />
+                      <label for="floatingFirstNameInput">First Name</label>
+                      <div
+                        *ngIf="f['firstName'].touched && f['firstName'].invalid"
+                      >
+                        <mat-error *ngIf="f['firstName'].errors?.['required']">
+                          First Name <strong>required</strong>
+                        </mat-error>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingLastNameInput"
+                        placeholder="Last Name"
+                        formControlName="lastName"
+                        class="form-control"
+                        autocomplete="off"
+                        required
+                      />
+                      <label for="floatingLastNameInput">Last Name</label>
+                      <div
+                        *ngIf="f['lastName'].touched && f['lastName'].invalid"
+                      >
+                        <mat-error *ngIf="f['lastName'].errors?.['required']">
+                          Last Name <strong>required</strong>
+                        </mat-error>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Password"
+                        formControlName="password"
+                        autocomplete="off"
+                        required
+                      />
+                      <label for="floatingPassword">Password</label>
+                      <div
+                        *ngIf="f['password'].touched && f['password'].invalid"
+                      >
+                        <mat-error *ngIf="f['password'].errors?.['required']">
+                          Password is <strong>required</strong>
+                        </mat-error>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        formControlName="confirmPassword"
+                        autocomplete="off"
+                        required
+                      />
+                      <label for="floatingPassword">Confirm Password</label>
+                      <div
+                        *ngIf="
+                          f['confirmPassword'].touched &&
+                          f['confirmPassword'].invalid
+                        "
+                      >
+                        <mat-error
+                          *ngIf="f['confirmPassword'].errors?.['required']"
+                        >
+                          Confirm Password is <strong>required</strong>
+                        </mat-error>
+                        <mat-error
+                          *ngIf="f['confirmPassword'].errors?.['mustMatch']"
+                        >
+                          Passwords must match
+                        </mat-error>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingEmailInput"
+                    placeholder="Ex. pat@example.com"
+                    formControlName="email"
+                    class="form-control"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="floatingEmailInput">Email Address</label>
+                  <mat-error *ngIf="submitted && f['email'].errors">
+                    Please enter a valid email address
+                  </mat-error>
+                  <div *ngIf="f['email'].touched && f['email'].invalid">
+                    <mat-error *ngIf="f['email'].errors?.['required']">
+                      Email is <strong>required</strong>
+                    </mat-error>
+                  </div>
+                </div>
+
+                <div class="form-group form-check">
+                  <input
+                    type="checkbox"
+                    formControlName="acceptTerms"
+                    id="acceptTerms"
+                    class="form-check-input"
+                    [ngClass]="{
+                      'is-invalid': submitted && f['acceptTerms'].errors
+                    }"
+                  />
+                  <label for="acceptTerms" class="form-check-label"
+                    >Accept Terms & Conditions</label
+                  >
+                  <div
+                    *ngIf="submitted && f['acceptTerms'].errors"
+                    class="invalid-feedback"
+                  >
+                    Accept Ts & Cs is required
+                  </div>
+                </div>
+
+                <div class="d-grid">
+                  <button
+                    class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
+                    type="submit"
+                    (click)="signup()"
+                    [disabled]="!signupForm.valid"
+                  >
+                    Sign up
+                  </button>
+                  <div class="text-center">
+                    <a class="small" href="#">Forgot password?</a>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="col"><hr /></div>
+                    <div class="col-auto">OR</div>
+                    <div class="col"><hr /></div>
+                  </div>
+                  <br />
+                  <button
+                    mat-stroked-button
+                    color="primary"
+                    type="button"
+                    (click)="login()"
+                  >
+                    Log In
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

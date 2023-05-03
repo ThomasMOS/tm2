@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Florence Kreiger",
+      "email": "FlorenceKreiger1@gmail.com",
+      "password": "vvw9CLHu"
+    },
+    {
+      "id": 2,
+      "name": "Pat Balistreri",
+      "email": "PatBalistreri42@yahoo.com",
+      "password": "h5VSQ2e4"
+    },
+    {
+      "id": 3,
+      "name": "Gladys Franey",
+      "email": "GladysFraney74@gmail.com",
+      "password": "IYZNrWNx"
+    },
+    {
+      "id": 4,
+      "name": "Annor Owusu",
+      "email": "thomas@gmail.com",
+      "password": "Expecto1"
+    },
+    {
+      "id": 5,
+      "name": "Gracia Mpwanga",
+      "email": "gracia@gmail.com",
+      "password": "Expecto1"
+    },
+    {
+      "id": 6,
+      "name": "Jane Annor",
+      "email": "debsannor@gmail.com",
+      "password": "Expecto1"
+    },
+    {
+      "id": 7,
+      "name": "Mama mama",
+      "email": "mama@gmail.com",
+      "password": "Expecto1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "tempore",
+      "date": "2023-04-28T18:53:31.797Z",
+      "description": "In atque vel perspiciatis. Laborum molestias rerum sed perferendis. Suscipit ducimus ducimus sunt dignissimos hic. Corporis et harum. Ipsa a fugit culpa saepe reprehenderit dignissimos consectetur eius modi. Illum nulla libero incidunt alias vitae laborum molestias maxime.",
+      "status": "T-Do"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "maxime",
+      "date": "2023-04-29T01:54:45.062Z",
+      "description": "Voluptas odio quisquam explicabo quod. Nisi optio minima molestias aut deserunt quasi dolores. Nesciunt voluptatibus odit maiores modi eligendi deleniti perferendis similique. Aspernatur maiores officia consequuntur dolores quia. Reprehenderit reprehenderit molestiae quos assumenda quia cupiditate. Dolorem quam nisi tempore dignissimos.",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "natus",
+      "date": "2023-04-29T12:24:48.193Z",
+      "description": "Incidunt alias aliquid. Atque occaecati inventore eum iste. Molestiae aut aut ducimus dignissimos autem fugit nisi vitae libero. Libero numquam animi quis amet veritatis nam nobis eum nobis. Sed tenetur cum.",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "name": "Computer Science",
+      "date": "2023-04-30",
+      "description": "Welcome to the home of Computer Science IT",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "name": "Great Karoo",
+      "date": "2023-05-17",
+      "description": "dfkdfsdf fsksfggs ffgkggfkgf gflgs gfgsglgf fgslgslggf fglgslgsgs gflgglssg gfslggs gflgssglgs gfglssglgf sflfgslgs gfsglgs gfgslsglgsg gg\n\n\n\ngfksgkjsggs gflglsg slglgfs ",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "name": "Annor Owusu",
+      "date": "2023-05-01",
+      "description": "kjfsrekrwe rekrkrew erwkerkerw rekerwk",
+      "status": "DONE"
+    },
+    {
+      "id": 7,
+      "userId": 6,
+      "name": "John Doee",
+      "date": "2023-05-01",
+      "description": "Awesome",
+      "status": "IN_PROGRESS"
+    }
+  ]
+}

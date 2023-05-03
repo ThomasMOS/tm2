@@ -1,0 +1,21 @@
+.login {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url("../../../assets/images/auth/login.png");
+    background-size: cover;
+    background-position: center;
+  background-color: #002826;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
